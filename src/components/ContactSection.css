@@ -88,35 +88,8 @@
   flex-wrap: wrap;
 }
 
-.primary-btn,
-.secondary-btn {
-  padding: 14px 28px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 15px;
-}
 
-.primary-btn {
-  background: white;
-  color: black;
-  border: none;
-}
 
-.secondary-btn {
-  background: #111;
-  border: 1px solid #333;
-  color: white;
-}
-
-.primary-btn:hover {
-  transform: translateY(-4px);
-}
-
-.secondary-btn:hover {
-  background: #1a1a1a;
-}
 
 .contact-card {
   background: rgba(20,20,20,0.6);
@@ -206,37 +179,77 @@
 .submit-btn:hover {
   transform: translateY(-3px);
 }
-
 @media (max-width: 1024px) {
   .contact-header h2 {
-    font-size: 42px;
+    font-size: 38px;
   }
 }
 
 @media (max-width: 768px) {
-
   .beam {
-    width: 900px;
-    height: 900px;
-    top: -450px;
-    left: -350px;
+    width: 700px;
+    height: 700px;
+    top: -350px;
+    left: -250px;
+  }
+
+  .contact-section {
+    padding: 80px 16px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-header {
+    margin-bottom: 40px;
+  }
+
+  .contact-header h2 {
+    font-size: 32px;
+    line-height: 1.2;
   }
 
   .input-row {
     flex-direction: column;
+    gap: 12px;
   }
 
   .contact-card {
-    padding: 25px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
   }
 
   .contact-buttons {
     flex-direction: column;
+    gap: 12px;
   }
 
-  .primary-btn,
-  .secondary-btn {
-    width: 100%;
-    max-width: 260px;
+
+
+  .submit-btn {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-header h2 {
+    font-size: 28px;
+  }
+
+  .badge {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  .contact-card input,
+  .contact-card textarea,
+  .contact-card select {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .checkbox-group {
+    gap: 16px;
   }
 }

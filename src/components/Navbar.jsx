@@ -24,10 +24,10 @@ function Navbar() {
 
       {/* Fullscreen Menu */}
       <div className={`fullscreen-menu ${menuOpen ? "show" : ""}`}>
-        <a href="#" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="#" onClick={() => setMenuOpen(false)}>Work</a>
-        <a href="#" onClick={() => setMenuOpen(false)}>Services</a>
-        <a href="#" onClick={() => setMenuOpen(false)}>Contact</a>
+        <a href="Hero.jsx" onClick={() => setMenuOpen(false)}>Home</a>
+        <a href="WorkProcess.jsx" onClick={() => setMenuOpen(false)}>Work</a>
+        <a href="ServicesSlider.jsx" onClick={() => setMenuOpen(false)}>Services</a>
+        <a href="contactSection.jsx" onClick={() => setMenuOpen(false)}>Contact</a>
       </div>
     </>
   );

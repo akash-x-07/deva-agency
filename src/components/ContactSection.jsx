@@ -36,11 +36,6 @@ export default function ContactSection() {
             Ready to <br />
             <span>Get started</span>
           </h2>
-
-          <div className="contact-buttons">
-            <button className="primary-btn">Request a quote</button>
-            <button className="secondary-btn">Book a free call</button>
-          </div>
         </div>
 
         <div className="contact-card">
