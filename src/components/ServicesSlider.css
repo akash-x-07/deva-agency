@@ -1,0 +1,168 @@
+.services{
+  min-height:100vh;
+  padding:60px 20px;
+  background:black;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* Wrapper */
+
+.stack-wrapper{
+  position:relative;
+  width:100%;
+  max-width:780px;
+  height:440px;
+  margin:auto;
+  perspective:1600px;
+}
+
+/* Card */
+
+.card{
+  position:absolute;
+  width:100%;
+  height:100%;
+
+  border-radius:22px;
+  padding:45px;
+
+  backdrop-filter:blur(30px);
+  border:1px solid rgba(255,255,255,.06);
+
+  box-shadow:0 25px 70px rgba(0,0,0,.6);
+}
+
+/* Gradients */
+
+.card-green{
+  background:
+  radial-gradient(circle at 80% 20%, rgba(0,255,170,.25), transparent 40%),
+  linear-gradient(135deg,#0b2a22,#050b14);
+}
+
+.card-purple{
+  background:
+  radial-gradient(circle at 80% 20%, rgba(180,120,255,.25), transparent 40%),
+  linear-gradient(135deg,#2a1640,#050b14);
+}
+
+.card-blue{
+  background:
+  radial-gradient(circle at 80% 20%, rgba(90,170,255,.25), transparent 40%),
+  linear-gradient(135deg,#0e2240,#050b14);
+}
+
+/* Icon */
+
+.icon-circle{
+  position:absolute;
+  right:30px;
+  top:30px;
+
+  width:70px;
+  height:70px;
+  border-radius:50%;
+
+  background:rgba(255,255,255,.06);
+  backdrop-filter:blur(20px);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:26px;
+  color:#ffffff;
+}
+
+/* Content */
+
+.content{
+  max-width:460px;
+}
+
+/* Heading */
+
+.content h2{
+  font-size:36px;
+  margin-bottom:16px;
+  color:#ffffff;
+  font-weight:600;
+}
+
+/* Tags */
+
+.tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:18px;
+}
+
+.tags span{
+  border:1px solid rgba(255,255,255,.12);
+  padding:6px 12px;
+  border-radius:30px;
+  font-size:12px;
+  color:#9fb3c8;
+}
+
+/* Paragraph */
+
+.content p{
+  font-size:15px;
+  line-height:1.7;
+  color:#c7d2e0;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.services{
+  padding:40px 16px;
+}
+
+/* center fix */
+
+.stack-wrapper{
+  max-width:100%;
+  height:420px;
+}
+
+/* card */
+
+.card{
+  padding:26px;
+  border-radius:18px;
+}
+
+/* content */
+
+.content{
+  max-width:100%;
+}
+
+/* text */
+
+.content h2{
+  font-size:24px;
+}
+
+.content p{
+  font-size:14px;
+}
+
+/* icon */
+
+.icon-circle{
+  width:55px;
+  height:55px;
+  right:16px;
+  top:16px;
+  font-size:20px;
+}
+
+}

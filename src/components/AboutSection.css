@@ -1,0 +1,80 @@
+.about-section {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 140px 8%;
+  perspective: 1200px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Heading */
+.about-heading {
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #cfcfcf;
+  margin-bottom: 100px;
+}
+
+.about-heading span {
+  color: #ffffff;
+  font-weight: 600;
+  background: linear-gradient(90deg,#fff,#888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Grid */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px 120px;
+}
+
+/* Cards */
+.about-card {
+  transform-style: preserve-3d;
+  transition: 0.4s ease;
+}
+
+.about-card h3 {
+  font-size: 22px;
+  margin: 18px 0 10px;
+}
+
+.about-card p {
+  font-size: 15px;
+  color: #9e9e9e;
+  line-height: 1.6;
+  max-width: 380px;
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+}
+
+.icon svg {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease;
+}
+
+.about-card:hover .icon svg {
+  transform: rotate(15deg) scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 30px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

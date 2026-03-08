@@ -1,0 +1,87 @@
+.logo-section{
+  background:#000;
+  padding:60px 0;
+  overflow:hidden;
+  text-align:center;
+  position:relative;
+}
+
+/* heading */
+.trusted{
+  color:#9aa4b2;
+  letter-spacing:2px;
+  font-size:12px;
+  margin-bottom:35px;
+}
+
+/* slider wrapper */
+.logo-slider{
+  position:relative;
+  width:100%;
+  overflow:hidden;
+}
+
+/* moving track */
+.logo-track{
+  display:flex;
+  gap:80px;
+  width:max-content;
+  animation:scrollRight 28s linear infinite;
+}
+
+/* each logo */
+.logo-item{
+  font-size:32px;
+  color:#d1d5db;
+  opacity:.8;
+  font-weight:600;
+  white-space:nowrap;
+  transition:.3s;
+}
+
+.logo-item:hover{
+  opacity:1;
+  transform:scale(1.1);
+}
+
+/* infinite animation */
+@keyframes scrollRight{
+  from{
+    transform:translateX(-50%);
+  }
+  to{
+    transform:translateX(0%);
+  }
+}
+
+/* fade edges (premium look) */
+.logo-section::before,
+.logo-section::after{
+  content:"";
+  position:absolute;
+  top:0;
+  width:200px;
+  height:100%;
+  z-index:2;
+}
+
+.logo-section::before{
+  left:0;
+  background:linear-gradient(to right,#000,transparent);
+}
+
+.logo-section::after{
+  right:0;
+  background:linear-gradient(to left,#000,transparent);
+}
+
+/* responsive */
+@media(max-width:768px){
+  .logo-item{
+    font-size:22px;
+  }
+
+  .logo-track{
+    gap:50px;
+  }
+}
