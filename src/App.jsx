@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import ContactSection from "./components/ContactSection";
 import LogoSlider from "./components/LogoSlider";
+import Portfolio from "./components/Portfolio";
 
 
 
@@ -24,6 +25,7 @@ function App(){
           <ServicesSlider/>
           <StatsSection/>
           <AboutSection/>
+          <Portfolio/>
           <WorkProcess/>
           <Testimonials/>
           <ContactSection/>

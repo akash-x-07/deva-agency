@@ -8,6 +8,7 @@
   overflow: hidden;
   color: white;
   padding: 0 24px;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Beam */
@@ -70,10 +71,10 @@
 /* Heading */
 
 .hero h1 {
-  font-size: clamp(40px, 6vw, 84px);
+  font-size: clamp(48px, 6vw, 86px);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: -1.2px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .hero h1 span {
@@ -84,11 +85,11 @@
 
 .hero p {
   letter-spacing: 0.4px;
-  font-size: clamp(17px, 1.8vw, 20px);
-  margin: 32px auto 52px;
-  opacity: 0.75;
+  font-size: clamp(18px, 1.6vw, 20px);
+  margin: 30px auto 50px;
+  opacity: 0.85;
   max-width: 620px;
-  line-height: 1.65;
+  line-height: 1.7;
 }
 
 /* Buttons */
@@ -115,9 +116,7 @@
   border: none;
   color: black;
 }
-html{
-  scroll-behavior: smooth;
-}
+
 .secondary-btn {
   background: #111;
   border: 1px solid #333;
@@ -132,6 +131,10 @@ html{
   background: #222;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Tablet */
 
 @media (max-width: 1024px) {
@@ -141,11 +144,11 @@ html{
   }
 
   .hero h1 {
-    font-size: clamp(36px, 6vw, 60px);
+    font-size: 54px;
   }
 
   .hero p {
-    font-size: 16px;
+    font-size: 17px;
   }
 
 }
@@ -170,15 +173,14 @@ html{
   }
 
   .hero h1 {
-    font-size: 34px;
-    line-height: 1.15;
-    letter-spacing: -0.5px;
+    font-size: 40px;   /* Bigger mobile heading */
+    line-height: 1.2;
   }
 
   .hero p {
-    font-size: 16px;
+    font-size: 17px;  /* Bigger paragraph */
     margin: 24px auto 38px;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   .hero-buttons {
@@ -202,11 +204,11 @@ html{
 @media (max-width: 480px) {
 
   .hero h1 {
-    font-size: 30px;
+    font-size: 36px;  /* still big on small phones */
   }
 
   .hero p {
-    font-size: 15px;
+    font-size: 16px;
   }
 
 }
