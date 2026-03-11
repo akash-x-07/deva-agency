@@ -35,9 +35,9 @@ function Navbar() {
       </header>
 
       <div className={`fullscreen-menu ${menuOpen ? "show" : ""}`}>
-        <a onClick={() => scrollToSection("home")}>Home</a>
-        <a onClick={() => scrollToSection("content")}>About</a>
-        <a onClick={() => scrollToSection("services")}>Services</a>
+        <a onClick={() => scrollToSection("hero")}>Home</a>
+        <a onClick={() => scrollToSection("snippet-container")}>About</a>
+        <a onClick={() => scrollToSection("services-container")}>Services</a>
         <a onClick={() => scrollToSection("contact-section")}>Contact</a>
       </div>
     </>
