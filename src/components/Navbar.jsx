@@ -4,13 +4,25 @@ import "./Navbar.css";
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const scrollToSection = (className) => {
+    const section = document.querySelector(`.${className}`);
+
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <header className="navbar">
         <div className="nav-container">
           <div className="logo">DEVA MEDIA</div>
 
-          {/* Hamburger always visible */}
           <div
             className={`hamburger ${menuOpen ? "active" : ""}`}
             onClick={() => setMenuOpen(!menuOpen)}
@@ -22,12 +34,11 @@ function Navbar() {
         </div>
       </header>
 
-      {/* Fullscreen Menu */}
       <div className={`fullscreen-menu ${menuOpen ? "show" : ""}`}>
-        <a href="Hero.jsx" onClick={() => setMenuOpen(false)}>Home</a>
-        <a href="WorkProcess.jsx" onClick={() => setMenuOpen(false)}>Work</a>
-        <a href="ServicesSlider.jsx" onClick={() => setMenuOpen(false)}>Services</a>
-        <a href="contactSection.jsx" onClick={() => setMenuOpen(false)}>Contact</a>
+        <a onClick={() => scrollToSection("home")}>Home</a>
+        <a onClick={() => scrollToSection("content")}>About</a>
+        <a onClick={() => scrollToSection("services")}>Services</a>
+        <a onClick={() => scrollToSection("contact-section")}>Contact</a>
       </div>
     </>
   );
