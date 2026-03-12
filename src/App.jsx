@@ -1,5 +1,6 @@
-import { div } from "framer-motion/client";
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import SplitText from "./components/SplitText";
@@ -13,24 +14,64 @@ import ContactSection from "./components/ContactSection";
 import LogoSlider from "./components/LogoSlider";
 import Portfolio from "./components/Portfolio";
 
-
-
-function App(){
-  return(
-        <div className="div">
-          <Navbar/>
-          <Hero/>
-          <LogoSlider/>
-          <SplitText/>
-          <ServicesSlider/>
-          <StatsSection/>
-          <AboutSection/>
-          <Portfolio/>
-          <WorkProcess/>
-          <Testimonials/>
-          <ContactSection/>
-          <Footer/>
-        </div>
+function Home() {
+  return (
+    <>
+      <Hero />
+      <LogoSlider />
+      <SplitText />
+      <ServicesSlider />
+      <StatsSection />
+      <AboutSection />
+      <Portfolio />
+      <WorkProcess />
+      <Testimonials />
+      <ContactSection />
+    </>
   );
 }
-export default App
+
+function About() {
+  return (
+    <div>
+      <AboutSection />
+    </div>
+  );
+}
+
+function Services() {
+  return (
+    <div>
+      <SplitText />
+    </div>
+  );
+}
+
+function Contact() {
+  return (
+    <div>
+      <ContactSection />
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="div">
+        <Navbar />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;

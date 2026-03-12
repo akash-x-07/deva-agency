@@ -1,19 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const scrollToSection = (className) => {
-    const section = document.querySelector(`.${className}`);
-
-    if (section) {
-      section.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-    }
-
+  const closeMenu = () => {
     setMenuOpen(false);
   };
 
@@ -35,10 +27,10 @@ function Navbar() {
       </header>
 
       <div className={`fullscreen-menu ${menuOpen ? "show" : ""}`}>
-        <a onClick={() => scrollToSection("hero")}>Home</a>
-        <a onClick={() => scrollToSection("snippet-container")}>About</a>
-        <a onClick={() => scrollToSection("services-container")}>Services</a>
-        <a onClick={() => scrollToSection("contact-section")}>Contact</a>
+        <Link to="/" onClick={closeMenu}>Home</Link>
+        <Link to="/about" onClick={closeMenu}>About</Link>
+        <Link to="/services" onClick={closeMenu}>Services</Link>
+        <Link to="/contact" onClick={closeMenu}>Contact</Link>
       </div>
     </>
   );
