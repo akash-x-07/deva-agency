@@ -131,43 +131,43 @@ const SplitText = () => {
         </div>
       </section>
 
-      {/* ABOUT */}
+        {/* ABOUT */}
 
-      <motion.section
-        className="about-snippet"
-        variants={sectionVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ delay: 0.2 }}
-      >
+        <motion.section
+          className="about-snippet"
+          variants={sectionVariant}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
 
-        <div className="snippet-container">
+          <div className="snippet-container">
 
-          <span className="snippet-tag">
-            ABOUT DEVA MEDIA
-          </span>
+            <span className="snippet-tag">
+              ABOUT DEVA MEDIA
+            </span>
 
-          <h2 className="snippet-heading">
-            The brands that win today aren’t louder.
-            <br />
-            They’re distributed smarter.
-          </h2>
+            <h2 className="snippet-heading">
+              The brands that win today aren’t louder.
+              <br />
+              They’re distributed smarter.
+            </h2>
 
-          <p className="snippet-text">
-            In a world flooded with content, visibility is the real
-            competitive advantage.
-          </p>
+            <p className="snippet-text">
+              In a world flooded with content, visibility is the real
+              competitive advantage.
+            </p>
 
-          <p className="snippet-text">
-            Our systems combine content strategy, media distribution
-            and influence networks to ensure your brand reaches
-            the audiences that matter.
-          </p>
+            <p className="snippet-text">
+              Our systems combine content strategy, media distribution
+              and influence networks to ensure your brand reaches
+              the audiences that matter.
+            </p>
 
-        </div>
+          </div>
 
-      </motion.section>
+        </motion.section>
 
       {/* SERVICES */}
 

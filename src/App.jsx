@@ -14,6 +14,10 @@ import ContactSection from "./components/ContactSection";
 import LogoSlider from "./components/LogoSlider";
 import Portfolio from "./components/Portfolio";
 
+import ServicesPages from "./pages/ServicesPages";
+import AboutPage from "./pages/AboutPage";
+
+
 function Home() {
   return (
     <>
@@ -22,7 +26,6 @@ function Home() {
       <SplitText />
       <ServicesSlider />
       <StatsSection />
-      <AboutSection />
       <Portfolio />
       <WorkProcess />
       <Testimonials />
@@ -31,45 +34,27 @@ function Home() {
   );
 }
 
-function About() {
-  return (
-    <div>
-      <AboutSection />
-    </div>
-  );
-}
-
-function Services() {
-  return (
-    <div>
-      <SplitText />
-    </div>
-  );
-}
 
 function Contact() {
-  return (
-    <div>
-      <ContactSection />
-    </div>
-  );
+  return <ContactSection />;
 }
+
 
 function App() {
   return (
     <Router>
-      <div className="div">
-        <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <Navbar />
 
-        <Footer />
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/services" element={<ServicesPages />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
+      <Footer />
+
     </Router>
   );
 }
