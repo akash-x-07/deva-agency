@@ -1,5 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {
+  Lightbulb,
+  Share2,
+  Handshake,
+  Megaphone
+} from "lucide-react";
 import "./ServicesPages.css";
 
 function ServicesPage() {
@@ -47,6 +53,7 @@ function ServicesPage() {
 
         <h2 className="services-page-heading">
           Expanding Brand Visibility
+          <br />
           Through Strategy
         </h2>
 
@@ -58,7 +65,12 @@ function ServicesPage() {
         >
 
           <motion.div className="services-page-card" variants={cardVariant}>
+            <div className="service-icon">
+              <Lightbulb size={32} />
+            </div>
+
             <h3>Content Intelligence</h3>
+
             <p>
               Great visibility begins with the right content.
               We identify stories and moments that resonate
@@ -67,8 +79,14 @@ function ServicesPage() {
             </p>
           </motion.div>
 
+
           <motion.div className="services-page-card" variants={cardVariant}>
+            <div className="service-icon">
+              <Share2 size={32} />
+            </div>
+
             <h3>Media Distribution</h3>
+
             <p>
               Creating content is only the beginning.
               Our distribution network ensures your
@@ -77,8 +95,14 @@ function ServicesPage() {
             </p>
           </motion.div>
 
+
           <motion.div className="services-page-card" variants={cardVariant}>
+            <div className="service-icon">
+              <Handshake size={32} />
+            </div>
+
             <h3>Strategic Partnerships</h3>
+
             <p>
               We connect brands, creators and public
               figures with collaborations that elevate
@@ -86,8 +110,14 @@ function ServicesPage() {
             </p>
           </motion.div>
 
+
           <motion.div className="services-page-card" variants={cardVariant}>
+            <div className="service-icon">
+              <Megaphone size={32} />
+            </div>
+
             <h3>Public Presence</h3>
+
             <p>
               Through strategic media exposure and
               public relations we strengthen your

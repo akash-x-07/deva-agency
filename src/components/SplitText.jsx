@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./splittext.css";
 import devaaa from "../assets/devaaa.jpg";
-
 import {
   FiTrendingUp,
   FiShare2,
@@ -184,83 +183,101 @@ const SplitText = () => {
 
       </motion.section>
 
-      {/* SERVICES */}
+     
+<motion.section
+  className="services-section"
+  variants={sectionVariant}
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true }}
+>
 
-      <motion.section
-        className="services-section"
-        variants={sectionVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
+  <div className="services-container">
 
-        <div className="services-container">
+    <span className="services-tag">
+      OUR SERVICES
+    </span>
 
-          <span className="services-tag">
-            OUR SERVICES
-          </span>
+    <h2 className="services-heading">
+      Expanding Brand Visibility Through Strategy
+    </h2>
 
-          <h2 className="services-heading">
-            Expanding Brand Visibility Through Strategy
-          </h2>
+    <motion.div
+      className="services-grid"
+      variants={containerStagger}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+    >
 
-          <motion.div
-            className="services-grid"
-            variants={containerStagger}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
+      {/* CARD 1 */}
 
-            <motion.div className="service-card" variants={cardVariant}>
-              <div className="service-icon">
-                <FiTrendingUp />
-              </div>
-              <h3>Content Intelligence</h3>
-              <p>
-                We analyze trends and craft content strategies
-                that resonate with modern audiences.
-              </p>
-            </motion.div>
-
-            <motion.div className="service-card" variants={cardVariant}>
-              <div className="service-icon">
-                <FiShare2 />
-              </div>
-              <h3>Media Distribution</h3>
-              <p>
-                Our distribution systems ensure your message
-                reaches the right audiences across platforms.
-              </p>
-            </motion.div>
-
-            <motion.div className="service-card" variants={cardVariant}>
-              <div className="service-icon">
-                <FiUsers />
-              </div>
-              <h3>Strategic Partnerships</h3>
-              <p>
-                We connect brands with creators and public
-                figures to expand reach and influence.
-              </p>
-            </motion.div>
-
-            <motion.div className="service-card" variants={cardVariant}>
-              <div className="service-icon">
-                <FiGlobe />
-              </div>
-              <h3>Public Presence</h3>
-              <p>
-                Media exposure and PR positioning help
-                strengthen your brand authority.
-              </p>
-            </motion.div>
-
-          </motion.div>
-
+      <motion.div className="service-card" variants={cardVariant}>
+        <div className="service-icon">
+          <FiTrendingUp size={26} />
         </div>
 
-      </motion.section>
+        <h3>Content Intelligence</h3>
+
+        <p>
+          We analyze trends and craft content strategies
+          that resonate with modern audiences.
+        </p>
+      </motion.div>
+
+
+      {/* CARD 2 */}
+
+      <motion.div className="service-card" variants={cardVariant}>
+        <div className="service-icon">
+          <FiShare2 size={26} />
+        </div>
+
+        <h3>Media Distribution</h3>
+
+        <p>
+          Our distribution systems ensure your message
+          reaches the right audiences across platforms.
+        </p>
+      </motion.div>
+
+
+      {/* CARD 3 */}
+
+      <motion.div className="service-card" variants={cardVariant}>
+        <div className="service-icon">
+          <FiUsers size={26} />
+        </div>
+
+        <h3>Strategic Partnerships</h3>
+
+        <p>
+          We connect brands with creators and public
+          figures to expand reach and influence.
+        </p>
+      </motion.div>
+
+
+      {/* CARD 4 */}
+
+      <motion.div className="service-card" variants={cardVariant}>
+        <div className="service-icon">
+          <FiGlobe size={26} />
+        </div>
+
+        <h3>Public Presence</h3>
+
+        <p>
+          Media exposure and PR positioning help
+          strengthen your brand authority.
+        </p>
+      </motion.div>
+
+    </motion.div>
+
+  </div>
+
+</motion.section>
 
       {/* FINAL CTA */}
 
