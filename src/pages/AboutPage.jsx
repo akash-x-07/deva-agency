@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaRocket, FaChartLine, FaBullhorn, FaLightbulb } from "react-icons/fa";
 import "./AboutPage.css";
 
 const sectionVariant = {
@@ -11,7 +12,7 @@ const sectionVariant = {
   }
 };
 
-export default function bout() {
+export default function AboutPage() {
   return (
     <>
 
@@ -53,7 +54,42 @@ export default function bout() {
       </motion.section>
 
 
-      {/* NEW VISION SECTION */}
+      {/* FEATURE SECTION */}
+
+      <section className="features-section">
+
+        <div className="features-container">
+
+          <div className="feature-card">
+            <FaRocket className="feature-icon"/>
+            <h3>Fast Brand Growth</h3>
+            <p>We scale brands using modern digital strategies and powerful media distribution.</p>
+          </div>
+
+          <div className="feature-card">
+            <FaChartLine className="feature-icon"/>
+            <h3>Data Driven Strategy</h3>
+            <p>Every campaign we build is optimized using analytics and performance insights.</p>
+          </div>
+
+          <div className="feature-card">
+            <FaBullhorn className="feature-icon"/>
+            <h3>Powerful Marketing</h3>
+            <p>We create marketing systems that continuously generate traffic and leads.</p>
+          </div>
+
+          <div className="feature-card">
+            <FaLightbulb className="feature-icon"/>
+            <h3>Creative Innovation</h3>
+            <p>Our creative team builds unique brand identities that stand out online.</p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* VISION SECTION */}
 
       <motion.section
         className="vision-section"

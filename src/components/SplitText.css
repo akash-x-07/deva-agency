@@ -357,6 +357,7 @@ max-width:260px;
    SERVICES
 ===================== */
 
+
 .services-section{
 padding:140px 24px;
 background:#000;
@@ -476,6 +477,49 @@ grid-template-columns:1fr;
 
 .services-heading{
 font-size:30px;
+}
+
+}
+.about-highlights{
+margin-top:60px;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.highlight-card{
+background:rgba(255,255,255,0.04);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:16px;
+padding:30px;
+transition:0.4s;
+}
+
+.highlight-card:hover{
+transform:translateY(-8px);
+box-shadow:0 20px 60px rgba(255,255,255,0.08);
+}
+
+.highlight-card h3{
+font-family:'Space Grotesk',sans-serif;
+margin-bottom:10px;
+}
+
+.highlight-card p{
+color:#9aa4b2;
+font-size:15px;
+}
+
+.service-icon{
+font-size:28px;
+color:#8b5cf6;
+margin-bottom:14px;
+}
+
+@media(max-width:900px){
+
+.about-highlights{
+grid-template-columns:1fr;
 }
 
 }

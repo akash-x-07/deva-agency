@@ -3,15 +3,17 @@ import { motion } from "framer-motion";
 import "./splittext.css";
 import devaaa from "../assets/devaaa.jpg";
 
+import {
+  FiTrendingUp,
+  FiShare2,
+  FiUsers,
+  FiGlobe
+} from "react-icons/fi";
+
 const text = "Scaling Brands Through Strategic Visibility";
 
-/* SECTION ANIMATION */
-
 const sectionVariant = {
-  hidden: {
-    opacity: 0,
-    y: 80
-  },
+  hidden: { opacity: 0, y: 80 },
   visible: {
     opacity: 1,
     y: 0,
@@ -21,8 +23,6 @@ const sectionVariant = {
     }
   }
 };
-
-/* SERVICES STAGGER */
 
 const containerStagger = {
   hidden: {},
@@ -34,10 +34,7 @@ const containerStagger = {
 };
 
 const cardVariant = {
-  hidden: {
-    opacity: 0,
-    y: 60
-  },
+  hidden: { opacity: 0, y: 60 },
   visible: {
     opacity: 1,
     y: 0,
@@ -51,11 +48,8 @@ const SplitText = () => {
 
   const scrollToSection = (className) => {
     const section = document.querySelector(`.${className}`);
-
     if (section) {
-      section.scrollIntoView({
-        behavior: "smooth"
-      });
+      section.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -104,8 +98,7 @@ const SplitText = () => {
                   animate={{ y: 0, opacity: 1 }}
                   transition={{
                     delay: index * 0.03,
-                    duration: 0.5,
-                    ease: "easeOut"
+                    duration: 0.5
                   }}
                 >
                   {char === " " ? "\u00A0" : char}
@@ -131,43 +124,65 @@ const SplitText = () => {
         </div>
       </section>
 
-        {/* ABOUT */}
+      {/* ABOUT */}
 
-        <motion.section
-          className="about-snippet"
-          variants={sectionVariant}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-        >
+      <motion.section
+        className="about-snippet"
+        variants={sectionVariant}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
 
-          <div className="snippet-container">
+        <div className="snippet-container">
 
-            <span className="snippet-tag">
-              ABOUT DEVA MEDIA
-            </span>
+          <span className="snippet-tag">
+            ABOUT DEVA MEDIA
+          </span>
 
-            <h2 className="snippet-heading">
-              The brands that win today aren’t louder.
-              <br />
-              They’re distributed smarter.
-            </h2>
+          <h2 className="snippet-heading">
+            The brands that win today aren’t louder.
+            <br />
+            They’re distributed smarter.
+          </h2>
 
-            <p className="snippet-text">
-              In a world flooded with content, visibility is the real
-              competitive advantage.
-            </p>
+          <p className="snippet-text">
+            In a world flooded with content, visibility is the real
+            competitive advantage. We help brands scale attention
+            through strategic distribution and influence networks.
+          </p>
 
-            <p className="snippet-text">
-              Our systems combine content strategy, media distribution
-              and influence networks to ensure your brand reaches
-              the audiences that matter.
-            </p>
+          <div className="about-highlights">
+
+            <div className="highlight-card">
+              <h3>Content Strategy</h3>
+              <p>
+                We craft powerful stories and content strategies
+                that capture modern audience attention.
+              </p>
+            </div>
+
+            <div className="highlight-card">
+              <h3>Distribution Systems</h3>
+              <p>
+                Our network ensures your brand reaches the right
+                platforms and communities.
+              </p>
+            </div>
+
+            <div className="highlight-card">
+              <h3>Influence Networks</h3>
+              <p>
+                Creator partnerships amplify credibility and
+                expand your audience reach.
+              </p>
+            </div>
 
           </div>
 
-        </motion.section>
+        </div>
+
+      </motion.section>
 
       {/* SERVICES */}
 
@@ -177,7 +192,6 @@ const SplitText = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ delay: 0.4 }}
       >
 
         <div className="services-container">
@@ -187,8 +201,7 @@ const SplitText = () => {
           </span>
 
           <h2 className="services-heading">
-            Expanding Brand Visibility
-            Through Strategy
+            Expanding Brand Visibility Through Strategy
           </h2>
 
           <motion.div
@@ -200,81 +213,50 @@ const SplitText = () => {
           >
 
             <motion.div className="service-card" variants={cardVariant}>
+              <div className="service-icon">
+                <FiTrendingUp />
+              </div>
               <h3>Content Intelligence</h3>
               <p>
-                Great visibility begins with the right content.
-                We identify stories and moments that resonate
-                with audiences and transform them into powerful
-                digital assets.
+                We analyze trends and craft content strategies
+                that resonate with modern audiences.
               </p>
             </motion.div>
 
             <motion.div className="service-card" variants={cardVariant}>
+              <div className="service-icon">
+                <FiShare2 />
+              </div>
               <h3>Media Distribution</h3>
               <p>
-                Creating content is only the beginning.
-                Our distribution network ensures your
-                message reaches the right audiences
-                across modern platforms.
+                Our distribution systems ensure your message
+                reaches the right audiences across platforms.
               </p>
             </motion.div>
 
             <motion.div className="service-card" variants={cardVariant}>
+              <div className="service-icon">
+                <FiUsers />
+              </div>
               <h3>Strategic Partnerships</h3>
               <p>
-                We connect brands, creators and public
-                figures with collaborations that elevate
-                credibility and expand influence.
+                We connect brands with creators and public
+                figures to expand reach and influence.
               </p>
             </motion.div>
 
             <motion.div className="service-card" variants={cardVariant}>
+              <div className="service-icon">
+                <FiGlobe />
+              </div>
               <h3>Public Presence</h3>
               <p>
-                Through strategic media exposure and
-                public relations we strengthen your
-                brand’s digital presence.
+                Media exposure and PR positioning help
+                strengthen your brand authority.
               </p>
             </motion.div>
 
           </motion.div>
-
-        </div>
-
-      </motion.section>
-
-      {/* APPROACH */}
-
-      <motion.section
-        className="approach-section"
-        variants={sectionVariant}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ delay: 0.6 }}
-      >
-
-        <div className="approach-container">
-
-          <span className="services-tag">
-            OUR APPROACH
-          </span>
-
-          <h2 className="services-heading">
-            Meaningful Visibility
-          </h2>
-
-          <p className="approach-text">
-            Our work is built around one principle:
-            meaningful visibility.
-          </p>
-
-          <p className="approach-text">
-            By combining content strategy, distribution,
-            partnerships and media exposure, we help our
-            clients build influence that extends far
-            beyond a single platform.
-          </p>
 
         </div>
 
@@ -288,7 +270,6 @@ const SplitText = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        transition={{ delay: 0.8 }}
       >
 
         <div className="cta-container">
@@ -298,16 +279,17 @@ const SplitText = () => {
           </h2>
 
           <p>
-            Let’s explore how Deva Media can help your brand,
-            story, or message reach the audiences it deserves.
+            Let’s explore how Deva Media can help your brand
+            reach the audiences it deserves.
           </p>
 
-         <button
-  className="cta"
-  onClick={() => scrollToSection("contact-section")}
->
-  Book a Strategy Call
-</button>
+          <button
+            className="cta"
+            onClick={() => scrollToSection("contact-section")}
+          >
+            Book a Strategy Call
+          </button>
+
         </div>
 
       </motion.section>

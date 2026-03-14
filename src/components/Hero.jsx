@@ -25,7 +25,6 @@ function Hero() {
     });
   }, []);
 
-  // 🔥 Scroll function using className
   const scrollToSection = (className) => {
     const section = document.querySelector(`.${className}`);
 
