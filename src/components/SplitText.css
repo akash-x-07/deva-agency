@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
 *{
 margin:0;
 padding:0;
@@ -8,11 +7,15 @@ box-sizing:border-box;
 
 body{
 background:#000;
-font-family:'Inter',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 color:white;
 overflow-x:hidden;
 }
-
+h1,h2,h3,h4{
+font-family:'Plus Jakarta Sans',sans-serif;
+font-weight:700;
+letter-spacing:-0.02em;
+}
 /* =====================
    HERO SECTION
 ===================== */
@@ -148,7 +151,7 @@ z-index:3;
 }
 
 .card-overlay h3{
-font-family:'Space Grotesk',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 font-size:44px;
 margin-bottom:4px;
 }
@@ -181,7 +184,7 @@ letter-spacing:.6px;
 }
 
 .title{
-font-family:'Space Grotesk',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 font-size:52px;
 margin:20px 0 10px 0;
 letter-spacing:-1px;
@@ -218,7 +221,7 @@ margin-top:36px;
 padding:15px 38px;
 border:none;
 border-radius:12px;
-font-family:'Inter',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 word-spacing:1px;
 letter-spacing:1px;
 
@@ -264,7 +267,7 @@ margin-bottom:28px;
 }
 
 .snippet-heading{
-font-family:'Space Grotesk',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 font-size:42px;
 margin-bottom:30px;
 line-height:1.3;
@@ -393,7 +396,7 @@ border:1px solid rgba(139,92,246,0.25);
 /* heading */
 
 .services-heading{
-font-family:'Space Grotesk',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 font-size:44px;
 margin-bottom:80px;
 line-height:1.2;
@@ -469,7 +472,7 @@ color:white;
 /* title */
 
 .service-card h3{
-font-family:'Space Grotesk',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 font-size:22px;
 margin-bottom:12px;
 }
@@ -547,7 +550,7 @@ margin:auto;
 }
 
 .cta-container h2{
-font-family:'Space Grotesk',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 font-size:36px;
 margin-bottom:20px;
 }
@@ -594,7 +597,7 @@ box-shadow:0 20px 60px rgba(255,255,255,0.08);
 }
 
 .highlight-card h3{
-font-family:'Space Grotesk',sans-serif;
+font-family:'Plus Jakarta Sans',sans-serif;
 margin-bottom:10px;
 }
 
