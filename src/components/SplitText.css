@@ -310,6 +310,7 @@ font-size:24px;
 }
 
 .desc{
+letter-spacing: 1px;
 margin:auto;
 margin-top:20px;
 }
@@ -336,6 +337,7 @@ line-height:1.6;
 }
 
 .desc{
+   letter-spacing: 1px;
 font-size:15px;
 }
 
@@ -552,6 +554,7 @@ margin-bottom:20px;
 
 .cta-container p{
 color:#9aa4b2;
+letter-spacing: 1px;
 margin-bottom:40px;
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 body{
 margin:0;
@@ -7,4 +7,20 @@ color:white;
 font-family:'Inter', sans-serif;
 -webkit-font-smoothing:antialiased;
 -moz-osx-font-smoothing:grayscale;
+}
+
+/* Headings */
+
+h1,h2,h3,h4{
+font-family:'Space Grotesk', sans-serif;
+letter-spacing:-0.02em;
+font-weight:600;
+}
+
+/* Paragraph */
+
+p{
+font-size:16px;
+line-height:1.6;
+color:#bfbfbf;
 }
